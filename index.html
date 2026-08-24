@@ -59,7 +59,9 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
 .fv-eyebrow{font-size:12px;letter-spacing:.12em;color:var(--gold-light);text-transform:uppercase;margin-bottom:16px}
 .fv-h1{font-size:30px;font-weight:700;line-height:1.4;margin-bottom:16px;color:#fff}
 .fv-h1 em{color:var(--gold-light);font-style:normal}
-.fv-sub{font-size:15px;color:rgba(255,255,255,.75);margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto}
+.fv-sub{font-size:15px;color:rgba(255,255,255,.75);margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto}
+.fv-img-wrapper{max-width:520px;margin:0 auto 24px;border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.fv-img{width:100%;height:auto;display:block}
 .fv-badges{margin-bottom:28px}
 .badge{font-size:12px;padding:5px 12px;border-radius:20px;border:1px solid rgba(184,150,62,.6);color:var(--gold-light);display:inline-block;margin:3px}
 .cta-btn{display:inline-block;background:var(--gold-light);color:var(--navy);font-size:14px;font-weight:700;padding:12px 28px;border-radius:6px;text-decoration:none;margin:4px;transition:opacity 0.2s;}
@@ -90,6 +92,7 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
 .trust-num{font-size:26px;font-weight:700;color:var(--navy)}
 .trust-label{font-size:12px;color:var(--textsec);margin-top:4px}
 
+.voice-img{width:100%;height:220px;object-fit:cover;border-radius:8px;margin-bottom:20px;display:block}
 .voice-cards{margin-top:16px}
 .voice-card{background:var(--secbg);border-radius:8px;padding:16px 20px;border-left:3px solid var(--gold);margin-bottom:12px}
 .voice-biz{font-size:11px;color:var(--texttert);margin-bottom:6px}
@@ -105,6 +108,7 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
 .compare-table th.us{color:var(--gold)}
 
 .flagship-card{border:2px solid var(--gold);border-radius:8px;padding:20px;margin-top:16px}
+.flagship-img{width:100%;height:220px;object-fit:cover;border-radius:6px;margin-bottom:16px;display:block}
 .flagship-tag{font-size:11px;background:var(--gold);color:var(--navy);padding:4px 12px;border-radius:10px;display:inline-block;margin-bottom:12px;font-weight:700;letter-spacing:.05em}
 .flagship-name{font-size:19px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
 .flagship-spec{font-size:14px;color:var(--textsec);margin-bottom:3px}
@@ -118,6 +122,7 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
 .lineup-price{font-size:16px;font-weight:700;color:var(--gold);margin-top:8px}
 
 .offer-box{background:var(--navy);color:#fff;border-radius:10px;padding:24px;margin-top:16px}
+.offer-img{width:100%;max-height:240px;object-fit:cover;border-radius:6px;margin-bottom:16px;display:block}
 .offer-tag{font-size:11px;color:var(--gold-light);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
 .offer-title{font-size:19px;font-weight:700;margin-bottom:16px;color:#fff}
 .offer-list{list-style:none;margin-bottom:20px}
@@ -163,6 +168,7 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
   .pain-cards, .reason-grid, .trust-row, .lineup-grid{display:block;width:100%}
   .pain-card, .reason-card, .trust-item, .lineup-card{display:block;width:100%;margin-bottom:12px}
   .cta-btn{display:block;width:100%;margin:8px 0}
+  .voice-img, .flagship-img{height:180px}
 }
 </style>
 </head>
@@ -184,6 +190,12 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
   <p class="fv-eyebrow">三河一色産うなぎ 産地直送卸 / うな銀</p>
   <h1 class="fv-h1">市場を通さず、<em>産地から直接。</em><br>和食店・居酒屋・焼き鳥屋の<br>客単価を上げるうなぎ卸</h1>
   <p class="fv-sub">「うなぎ専門店じゃないけど、うなぎを1品入れたい」<br>そのニーズに、日本最大産地が応えます。</p>
+  
+  <!-- ① FVメイン画像（ひつまぶし） -->
+  <div class="fv-img-wrapper">
+    <img class="fv-img" src="pht-menu02..jpg" alt="三河一色産うなぎ ひつまぶし">
+  </div>
+
   <div class="fv-badges">
     <span class="badge">日本最大産地・一色町</span>
     <span class="badge">産地直送</span>
@@ -231,6 +243,10 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
 
 <div class="section">
   <h2 class="sec-h2">取引先<em>オーナーの声</em></h2>
+  
+  <!-- ② オーナーの声・調理シーン画像（炭火串焼き） -->
+  <img class="voice-img" src="makuake top.jpg" alt="炭火で香ばしく焼き上げるうなぎ串">
+  
   <div class="voice-cards">
     <div class="voice-card"><div class="voice-biz">名古屋市・和食店</div><div class="voice-text">「うちはうなぎ専門じゃないけど、う巻きを追加したらすごく喜ばれた。産地直送というだけで、お客さんの反応が違います」</div><div class="voice-name">Oオーナー（40代）</div></div>
     <div class="voice-card"><div class="voice-biz">愛知県・居酒屋</div><div class="voice-text">「うなぎ串を始めてから、一人当たりの注文金額が上がりました。仕入れも少量から相談できるので助かっています」</div><div class="voice-name">Kオーナー（50代）</div></div>
@@ -257,6 +273,8 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
   <h2 class="sec-h2">商品・<em>納品形態</em></h2>
 
   <div class="flagship-card">
+    <!-- ③ 目玉商品画像（炭火白焼き・生開き） -->
+    <img class="flagship-img" src="seirin_philo4.jpg" alt="三河一色産 生開き・白焼">
     <span class="flagship-tag">目玉商品</span>
     <div class="flagship-name">大サイズ</div>
     <div class="flagship-spec">生開き3P</div>
@@ -277,6 +295,8 @@ body{font-family:"Noto Sans CJK JP","Noto Sans JP",sans-serif;color:#222;backgro
 
 <div class="section alt">
   <div class="offer-box">
+    <!-- ④ オファー画像（うな重） -->
+    <img class="offer-img" src="insta #4-2-303.jpg" alt="極上のうな重">
     <div class="offer-tag">新規お取引先 限定</div>
     <h3 class="offer-title">まずはサンプルをお送りします。<br>食べてから、決めてください。</h3>
     <ul class="offer-list">
